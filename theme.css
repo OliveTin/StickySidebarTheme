@@ -1,0 +1,54 @@
+body {
+}
+
+
+nav.sidebar {
+  visibility: visible;
+  background-color: #333;
+  left: 0;
+  width: 3.5em;
+  transition: width 0.5s ease;
+  overflow: hidden;
+  word-wrap: none;
+}
+
+#navigation-links, #supplemental-links {
+  width: 12em;
+}
+
+nav.sidebar:hover {
+  width: 12em;
+}
+
+nav a::before {
+  content: "\1F4C1  ";
+}
+
+#showLogs::before {
+  content: "\1F50D  ";
+}
+
+#showDiagnostics::before {
+  content: "\26A0\FE0F  ";
+}
+
+nav a {
+  color: white;
+}
+
+nav.sidebar.shown {
+  width: 12em;
+}
+
+
+main {
+  padding-left: 4em;
+}
+
+h1 {
+  margin-left: 2em;
+}
+
+h1 a {
+  color: black;
+}
